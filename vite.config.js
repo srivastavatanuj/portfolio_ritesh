@@ -1,13 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '/dist', // this is default, but good to be explicit
-  },
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-  },
+    outDir: 'dist' // Yeh hi hona chahiye. Agar ../../dist hai toh error aayega
+  }
 })
